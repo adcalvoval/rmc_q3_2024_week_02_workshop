@@ -2,7 +2,7 @@
 
 ```{r}
 # Load necessary packages
-pacman::p_load(tidyverse, knitr, here)
+pacman::p_load(tidyverse, knitr, here, janitor)
 
 # Import the non-communicable diseases data
 data_ncd <- read_csv(here("data/burden-of-disease-ncd.csv"))
@@ -10,6 +10,11 @@ data_ncd <- read_csv(here("data/burden-of-disease-ncd.csv"))
 
 ```{r}
 # Filter the dataset to include only the three countries chosen by your group.
+filtered_data <- data_ncd %>%
+  filter(Entity == "Liberia" | Entity == "Spain" | Entity == "United States") %>% 
+  rename(dalys = 4) %>% 
+  clean_names()
+
 ```
 
 
@@ -19,16 +24,28 @@ data_ncd <- read_csv(here("data/burden-of-disease-ncd.csv"))
 # Here render a table for the DALY burden over time for the three countries. 
 # You should pivot the data to show each country in a separate column.
 # Use kable() from the knitr package to render the table.
+
+daly_table <- filtered_data %>% 
+  select(-code) %>% 
+pivot_wider(names_from = entity, values_from = dalys)
+
+kable(daly_table)
+
 ```
 
 ## Plot Showing Trends in NCD Burden Over Time 
 
 ```{r}
 # Here, plot a line graph showing the trend of DALY burden for the chosen countries over time. You can use ggplot2 to create this plot. Each country's line should be a different color.
+daly_plot <- filtered_data %>% 
+  ggplot(aes(x = year, y = dalys, color = entity)) +
+  geom_line() +
+  labs(y = "DALYs", color = "country")
+daly_plot
 ```
 
 ## Summary of NCD Burden Findings
 
-Provide a brief analysis based on the data presented in the table and chart. Highlight any significant findings or patterns. About 3 sentences.
+Shown above is the burden of non-communicable disease (NCD) for Liberia, Spain and the United States. Spain is unique, as it shows a fairly linear downward trend in NCD burden. Liberia is also generally trending downward, though there is a notable spike in NCD DALYs in the mid 2010's. From 1990-2010 the downward trend of NCD burden in the United States has been less dramatic than both Liberia and Spain. Notably, the United States has been experiencing an increase in NCD DALYs since the mid 2010's. One possible explanation for this is widespread issues with healthcare access, including preventative and routine care.
 
 
