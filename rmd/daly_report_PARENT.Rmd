@@ -1,6 +1,6 @@
 ---
 title: "Global Disease Burden Analysis"
-author: "REPLACE WITH THE AUTHOR NAMES" # AUTHOR NAMES HERE!
+author: Cassandra Pantuso, Trokon O. Yeabah, Adrián Calvo-Valderrama # AUTHOR NAMES HERE!
 output: github_document
 ---
 
@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 
 # Introduction
 
-This document compares the Disability-Adjusted Life Year (DALY) diseases burden for three countries: COUNTRY 1, COUNTRY 2, and COUNTRY 3. We compare the burden due to communicable, maternal, neonatal, and nutritional diseases (CMNN), non-communicable diseases (NCDs), and overall disease burden for these countries.
+This document compares the Disability-Adjusted Life Year (DALY) diseases burden for three countries: USA, Liberia, and Spain. We compare the burden due to communicable, maternal, neonatal, and nutritional diseases (CMNN), non-communicable diseases (NCDs), and overall disease burden for these countries.
 
 The source data is from the Institute for Health Metrics and Evaluation (IHME) Global Burden of Disease (GBD) study.
 
