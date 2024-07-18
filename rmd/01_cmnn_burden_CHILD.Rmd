@@ -54,4 +54,4 @@ ggplot(data_cmnn_1,
 
 ## Summary of CMNN Burden Findings
 
-Provide a brief analysis based on the data presented in the table and chart. Highlight any significant findings or patterns. About 3 sentences.
+Shown above is the burden of Communicable, Maternal, Neonatal, and Nutritional Disease Burden (CMNN) for Liberia, Spain and the United States between 1990 and 2019.The graph above shows that whilst the United States and Spain display a pretty trend over this time period. Meanwhile, whilst Liberia's CMNN Disease Burden numbers are significantly higher than the other two countries, it shows a strong decrease over the same period, with a temporary uptick around 2013.
