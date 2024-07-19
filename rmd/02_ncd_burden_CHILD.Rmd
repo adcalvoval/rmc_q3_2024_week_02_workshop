@@ -40,12 +40,17 @@ kable(daly_table)
 daly_plot <- filtered_data %>% 
   ggplot(aes(x = year, y = dalys, color = entity)) +
   geom_line() +
-  labs(y = "DALYs", color = "country")
+  labs(x = "Year", 
+       y = "DALYs", 
+       color = "Country", 
+       #title = "Non-Communicable Disease (NCD) Burden",
+       #subtitle = "Liberia, United States, and Spain, 1990-2019"
+       )
 daly_plot
 ```
 
 ## Summary of NCD Burden Findings
 
-Shown above is the burden of non-communicable disease (NCD) for Liberia, Spain and the United States. Spain is unique, as it shows a fairly linear downward trend in NCD burden. Liberia is also generally trending downward, though there is a notable spike in NCD DALYs in the mid 2010's. From 1990-2010 the downward trend of NCD burden in the United States has been less dramatic than both Liberia and Spain. Notably, the United States has been experiencing an increase in NCD DALYs since the mid 2010's. One possible explanation for this is widespread issues with healthcare access, including preventative and routine care.
+Shown above is the burden of non-communicable disease (NCD) in Liberia, Spain and the United States from 1990 to 2020. Spain is unique, as it shows a fairly linear downward trend in NCD burden. The burden of disease in Liberia is also generally trending downward, though there is a notable spike in the mid 2010's. From 1990-2010 the downward trend of NCD burden in the United States has been less dramatic than both Liberia and Spain. Notably, the United States has been experiencing an increase in NCD DALYs since the mid 2010's. While a growing elderly population and increased prevalence of age-related disease might explain the very slight leveling of the curve in Spain, it is unlikely that the increase in NCD burden in the United States can be explained by this alone. It is plausible that a major contributing factor is widespread issues with healthcare access, especially preventative and routine care.
 
 
