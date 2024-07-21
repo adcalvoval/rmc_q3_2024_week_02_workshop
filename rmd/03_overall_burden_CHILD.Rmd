@@ -33,9 +33,9 @@ data_overall_sel <- data_overall %>%
 # Use kable() from the knitr package to render the table.
 
 overall_table1 <- data_overall_sel %>% 
+  select(-code) %>% 
   pivot_wider(names_from = "entity",
               values_from = "daly") %>% 
-  select(-code) %>% 
   rename(Year = year)
 
 kable(overall_table1)

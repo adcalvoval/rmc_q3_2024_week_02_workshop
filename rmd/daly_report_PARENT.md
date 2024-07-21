@@ -131,14 +131,113 @@ healthcare access, especially preventative and routine care.
 
 # Overall Disease Burden
 
-### Trokon O. Yeabah
+#### Trokon O. Yeabah
 
 ## Table of Estimates for Overall Disease Burden Over Time
 
+| Year |   Liberia |    Spain | United States |
+|-----:|----------:|---------:|--------------:|
+| 1990 | 110283.22 |       NA |            NA |
+| 1991 |  93310.90 |       NA |            NA |
+| 1992 |  92755.26 |       NA |            NA |
+| 1993 | 100333.65 |       NA |            NA |
+| 1994 | 104052.58 |       NA |            NA |
+| 1995 |  95905.21 |       NA |            NA |
+| 1996 |  96343.71 |       NA |            NA |
+| 1997 |  87319.87 |       NA |            NA |
+| 1998 |  85725.46 |       NA |            NA |
+| 1999 |  83133.89 |       NA |            NA |
+| 2000 |  80469.57 |       NA |            NA |
+| 2001 |  78712.35 |       NA |            NA |
+| 2002 |  80228.65 |       NA |            NA |
+| 2003 |  79713.04 |       NA |            NA |
+| 2004 |  70132.27 |       NA |            NA |
+| 2005 |  67209.82 |       NA |            NA |
+| 2006 |  64621.78 |       NA |            NA |
+| 2007 |  62668.15 |       NA |            NA |
+| 2008 |  61410.76 |       NA |            NA |
+| 2009 |  59953.66 |       NA |            NA |
+| 2010 |  58554.29 |       NA |            NA |
+| 2011 |  57747.22 |       NA |            NA |
+| 2012 |  56828.30 |       NA |            NA |
+| 2013 |  55594.25 |       NA |            NA |
+| 2014 |  64219.26 |       NA |            NA |
+| 2015 |  57446.07 |       NA |            NA |
+| 2016 |  52716.51 |       NA |            NA |
+| 2017 |  51155.77 |       NA |            NA |
+| 2018 |  49736.10 |       NA |            NA |
+| 2019 |  48514.99 |       NA |            NA |
+| 1990 |        NA | 25244.17 |            NA |
+| 1991 |        NA | 24996.26 |            NA |
+| 1992 |        NA | 24565.44 |            NA |
+| 1993 |        NA | 24174.03 |            NA |
+| 1994 |        NA | 23826.01 |            NA |
+| 1995 |        NA | 23619.13 |            NA |
+| 1996 |        NA | 23353.26 |            NA |
+| 1997 |        NA | 22672.39 |            NA |
+| 1998 |        NA | 22336.27 |            NA |
+| 1999 |        NA | 22173.43 |            NA |
+| 2000 |        NA | 21750.68 |            NA |
+| 2001 |        NA | 21402.93 |            NA |
+| 2002 |        NA | 21208.10 |            NA |
+| 2003 |        NA | 21075.06 |            NA |
+| 2004 |        NA | 20737.59 |            NA |
+| 2005 |        NA | 20419.28 |            NA |
+| 2006 |        NA | 20044.92 |            NA |
+| 2007 |        NA | 19838.10 |            NA |
+| 2008 |        NA | 19573.29 |            NA |
+| 2009 |        NA | 19182.32 |            NA |
+| 2010 |        NA | 18873.36 |            NA |
+| 2011 |        NA | 18690.04 |            NA |
+| 2012 |        NA | 18505.75 |            NA |
+| 2013 |        NA | 18237.80 |            NA |
+| 2014 |        NA | 18128.46 |            NA |
+| 2015 |        NA | 18114.28 |            NA |
+| 2016 |        NA | 18000.71 |            NA |
+| 2017 |        NA | 17979.78 |            NA |
+| 2018 |        NA | 17988.26 |            NA |
+| 2019 |        NA | 18033.38 |            NA |
+| 1990 |        NA |       NA |      29357.02 |
+| 1991 |        NA |       NA |      29093.36 |
+| 1992 |        NA |       NA |      28767.75 |
+| 1993 |        NA |       NA |      28832.78 |
+| 1994 |        NA |       NA |      28691.94 |
+| 1995 |        NA |       NA |      28487.07 |
+| 1996 |        NA |       NA |      27981.23 |
+| 1997 |        NA |       NA |      27486.15 |
+| 1998 |        NA |       NA |      27273.42 |
+| 1999 |        NA |       NA |      27241.14 |
+| 2000 |        NA |       NA |      27132.50 |
+| 2001 |        NA |       NA |      27154.76 |
+| 2002 |        NA |       NA |      27023.56 |
+| 2003 |        NA |       NA |      26861.34 |
+| 2004 |        NA |       NA |      26523.14 |
+| 2005 |        NA |       NA |      26521.03 |
+| 2006 |        NA |       NA |      26289.37 |
+| 2007 |        NA |       NA |      26070.69 |
+| 2008 |        NA |       NA |      25886.82 |
+| 2009 |        NA |       NA |      25668.67 |
+| 2010 |        NA |       NA |      25383.77 |
+| 2011 |        NA |       NA |      25356.41 |
+| 2012 |        NA |       NA |      25281.31 |
+| 2013 |        NA |       NA |      25275.79 |
+| 2014 |        NA |       NA |      25346.71 |
+| 2015 |        NA |       NA |      25552.85 |
+| 2016 |        NA |       NA |      25854.39 |
+| 2017 |        NA |       NA |      25847.77 |
+| 2018 |        NA |       NA |      25914.99 |
+| 2019 |        NA |       NA |      26061.04 |
+
 ## Plot Showing Trends in Overall Disease Burden Over Time
+
+![](daly_report_PARENT_files/figure-gfm/unnamed-chunk-28-1.png)<!-- -->
 
 ## Summary of Overall Disease Burden Findings
 
-Provide a brief analysis based on the data presented in the table and
-chart. Highlight any significant findings or patterns. About 3
-sentences.
+This analysis underscores the distribution and patterns of the overall
+disease burden for Liberia, Spain and United States illustrated in table
+and chart. The three countries had an increase in all disease burden
+causes during 1990 and an intermittent decrease followed by a steadily
+dropped in the causes across Liberia, Spain and United States around
+2019. However, it is also important to indicate that the gap between
+Spain and United States was small compare to the huge gap for Liberia.
