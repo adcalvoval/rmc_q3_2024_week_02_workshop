@@ -1,3 +1,5 @@
+## Adrián Calvo-Valderrama
+
 # Communicable, Maternal, Neonatal, and Nutritional Disease Burden (CMNN)
 
 ```{r}
@@ -42,7 +44,7 @@ ggplot(data_cmnn_1,
              y= dalys,
              colour = entity)) +
   
-  geom_line(size = 0.5) +
+  geom_line() +
     labs(x = "Year",
          y = "DALYs",
        title = "Communicable, Maternal, Neonatal, and Nutritional Disease Burden (CMNN)",
