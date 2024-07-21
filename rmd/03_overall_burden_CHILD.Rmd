@@ -8,7 +8,7 @@
 
 ```{r}
 # Load necessary packages
-pacman::p_load(tidyverse, knitr, here)
+pacman::p_load(tidyverse, knitr, here, janitor)
 
 # Import the overall disease data
 data_overall <- read_csv(here("data/burden-of-disease-all-causes.csv"))
@@ -16,6 +16,12 @@ data_overall <- read_csv(here("data/burden-of-disease-all-causes.csv"))
 
 ```{r}
 # Filter the dataset to include only the three countries chosen by your group.
+data_overall_sel <- data_overall %>% 
+  clean_names() %>% 
+  filter(entity %in% c("Liberia","Spain", "United States")) %>% 
+  rename(
+    daly = dal_ys_disability_adjusted_life_years_all_causes_sex_both_age_age_standardized_rate)
+
 ```
 
 
@@ -25,15 +31,36 @@ data_overall <- read_csv(here("data/burden-of-disease-all-causes.csv"))
 # Here render a table for the DALY burden over time for the three countries. 
 # You should pivot the data to show each country in a separate column.
 # Use kable() from the knitr package to render the table.
+
+overall_table1 <- data_overall_sel %>% 
+  pivot_wider(names_from = "entity",
+              values_from = "daly") %>% 
+  select(-code) %>% 
+  rename(Year = year)
+
+kable(overall_table1)
 ```
 
 ## Plot Showing Trends in Overall Disease Burden Over Time
 
 ```{r}
 # Here, plot a line graph showing the trend of DALY burden for the chosen countries over time. You can use ggplot2 to create this plot. Each country's line should be a different color.
+
+data_overall_sel %>% 
+  ggplot(mapping = aes(x     = year,
+                       y     = daly,
+                       color = entity)) +
+  geom_line() +
+  labs(
+    title = "Overall Disease Burden in Liberia, Spain, and United States, 1990 - 2019",
+    x     = "Year",
+    y     = "DALY",
+    color = "Country"
+  )
+
 ```
 
 ## Summary of Overall Disease Burden Findings
 
-Provide a brief analysis based on the data presented in the table and chart. Highlight any significant findings or patterns. About 3 sentences.
+This analysis underscores the distribution and patterns of the overall disease burden for Liberia, Spain and United States illustrated in table and chart. The three countries had an increase in all disease burden causes during 1990 and an intermittent decrease followed by a steadily dropped in the causes across Liberia, Spain and United States around 2019. However, it is also important to indicate that the gap between Spain and United States was small compare to the huge gap for Liberia. 
 
