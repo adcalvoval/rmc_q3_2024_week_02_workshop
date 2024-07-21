@@ -36,7 +36,8 @@ overall_table1 <- data_overall_sel %>%
   select(-code) %>% 
   pivot_wider(names_from = "entity",
               values_from = "daly") %>% 
-  rename(Year = year)
+  rename(Year = year) %>% 
+  filter(!is.na("Liberia"), !is.na("Spain"),!is.na("United States"))
 
 kable(overall_table1)
 ```
