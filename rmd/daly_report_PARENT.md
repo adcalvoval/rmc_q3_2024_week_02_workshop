@@ -15,6 +15,8 @@ The source data is from the Institute for Health Metrics and Evaluation
 
 # Communicable, Maternal, Neonatal, and Nutritional Disease Burden (CMNN)
 
+#### Adrián Calvo-Valderrama
+
 ## Table of Estimates for CMNN Burden Over Time
 
 | year |  Liberia |    Spain | United States |
@@ -54,6 +56,10 @@ The source data is from the Institute for Health Metrics and Evaluation
 
 ![](daly_report_PARENT_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
+## Plot Showing Cumulative Trends in CMNN Burden Over Time
+
+![](daly_report_PARENT_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+
 ## Summary of CMNN Burden Findings
 
 Shown above is the burden of Communicable, Maternal, Neonatal, and
@@ -65,6 +71,8 @@ significantly higher than the other two countries, it shows a strong
 decrease over the same period, with a temporary uptick around 2013.
 
 # Non-Communicable Disease Burden (NCD)
+
+#### Cassandra Pantuso
 
 ## Table of Estimates for NCD Burden Over Time
 
@@ -103,21 +111,27 @@ decrease over the same period, with a temporary uptick around 2013.
 
 ## Plot Showing Trends in NCD Burden Over Time
 
-![](daly_report_PARENT_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](daly_report_PARENT_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
 
 ## Summary of NCD Burden Findings
 
-Shown above is the burden of non-communicable disease (NCD) for Liberia,
-Spain and the United States. Spain is unique, as it shows a fairly
-linear downward trend in NCD burden. Liberia is also generally trending
-downward, though there is a notable spike in NCD DALYs in the mid
-2010’s. From 1990-2010 the downward trend of NCD burden in the United
-States has been less dramatic than both Liberia and Spain. Notably, the
-United States has been experiencing an increase in NCD DALYs since the
-mid 2010’s. One possible explanation for this is widespread issues with
-healthcare access, including preventative and routine care.
+Shown above is the burden of non-communicable disease (NCD) in Liberia,
+Spain and the United States from 1990 to 2020. Spain is unique, as it
+shows a fairly linear downward trend in NCD burden. The burden of
+disease in Liberia is also generally trending downward, though there is
+a notable spike in the mid 2010’s. From 1990-2010 the downward trend of
+NCD burden in the United States has been less dramatic than both Liberia
+and Spain. Notably, the United States has been experiencing an increase
+in NCD DALYs since the mid 2010’s. While a growing elderly population
+and increased prevalence of age-related disease might explain the very
+slight leveling of the curve in Spain, it is unlikely that the increase
+in NCD burden in the United States can be explained by this alone. It is
+plausible that a major contributing factor is widespread issues with
+healthcare access, especially preventative and routine care.
 
 # Overall Disease Burden
+
+### Trokon O. Yeabah
 
 ## Table of Estimates for Overall Disease Burden Over Time
 

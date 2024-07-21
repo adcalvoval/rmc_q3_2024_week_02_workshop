@@ -1,6 +1,10 @@
-## Adrián Calvo-Valderrama
+
 
 # Communicable, Maternal, Neonatal, and Nutritional Disease Burden (CMNN)
+#### Adrián Calvo-Valderrama
+
+
+
 
 ```{r}
 # Load necessary packages
@@ -48,11 +52,37 @@ ggplot(data_cmnn_1,
     labs(x = "Year",
          y = "DALYs",
        title = "Communicable, Maternal, Neonatal, and Nutritional Disease Burden (CMNN)",
-       subtitle = "Liberia, United States, and Spain, 1990-2019")
+       subtitle = "Liberia, United States, and Spain, 1990-2019",
+       colour = "Country")
 
 
 
 ```
+
+
+## Plot Showing Cumulative Trends in CMNN Burden Over Time
+
+```{r}
+# Here, plot a line graph showing the trend of DALY burden for the chosen countries over time. You can use ggplot2 to create this plot. Each country's line should be a different color.
+
+ggplot(data_cmnn_1,
+       mapping = 
+         aes(x = year,
+             y= cumsum(dalys),
+             colour = entity)) +
+  
+  geom_line() +
+    labs(x = "Year",
+         y = "DALYs",
+       title = "Cumulative CMNN Disease Burden",
+       subtitle = "Liberia, United States, and Spain, 1990-2019",
+       colour = "Country")
+
+
+
+```
+
+
 
 ## Summary of CMNN Burden Findings
 
